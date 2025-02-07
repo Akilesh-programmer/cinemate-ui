@@ -4,7 +4,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
     return (
-        <div>
+        <div className="dark:bg-gray-700">
             <Header />
             <Content />
             <Footer />

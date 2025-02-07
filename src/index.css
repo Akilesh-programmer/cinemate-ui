@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+
+#root, html {
+    height: 100dvh;
+}

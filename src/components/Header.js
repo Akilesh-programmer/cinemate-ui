@@ -28,12 +28,12 @@ export const Header = () => {
     }
 
     return (
-        <header className="dark:bg-gray-800">
-            <nav className="h-20 flex border-b-2 dark:bg-gray-800
-            dark:text-slate-300">
+        <header className="dark:bg-gray-900 min-h-16">
+            <nav className="flex-col justify-center border-b-2 dark:bg-gray-900
+            dark:text-slate-300 dark:border-0 pt-2 py-4">
                 <div id="mobileNav"
                 className="sm:hidden flex flex-wrap items-center justify-between
-                w-11/12 mx-auto">
+                w-11/12 mx-auto pt-2">
                     <div className="flex items-center">
                         <img className="w-10" src={Logo} alt="Logo" />
                         <span 
@@ -64,15 +64,16 @@ export const Header = () => {
                 </div>
 
                 <div id="mobileDropDown" 
-                className={`${dropDownActive ? "" : "hidden"}
-                absolute top-20 w-[100%] h-60 border-b-2 flex-col z-50
-                sm:hidden dark:bg-gray-800`} >
+                className={`${dropDownActive ? "block" : "hidden"}
+                w-[100%] h-60 border-b-2 flex-col mt-6 dark:border-gray-400
+                sm:hidden dark:bg-gray-900`} >
                     <ul className="mx-auto text-center h-[100%] flex pb-4
                     flex-col justify-between text-lg">
                         <li>
                             <input type="text"
                             className="border-2 rounded-lg w-11/12
-                            dark:bg-slate-700"
+                            dark:bg-slate-700
+                            dark:border-gray-500"
                             placeholder="   Search..."/>
                         </li>
                         <li>
@@ -104,7 +105,7 @@ export const Header = () => {
 
                 <div id="desktopNav"
                 className="hidden sm:visible sm:flex justify-between
-                mx-auto items-center flex-wrap w-11/12">
+                mx-auto items-center flex-wrap w-11/12 pt-2">
                     <div className="flex items-center">
                         <img className="w-10" src={Logo} alt="Logo" />
                         <span className="text-2xl ml-2 font-bold">Cinemate</span>
